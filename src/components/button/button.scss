@@ -1,0 +1,22 @@
+.btn {
+    border: none;
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+    background-color: #4473EB;
+    color: $white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: background .1s linear;
+    cursor: pointer;
+
+    &:hover {
+        background: $blue__hover;
+    }
+
+    @media (max-width: 991px) {
+        width: 165px;
+        height: 45px;
+        font-size: 1rem;
+    }
+}

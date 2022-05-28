@@ -1,0 +1,136 @@
+$black: #000;
+$white: #fff;
+$blue: #4C2BC5;
+$blue__hover: #082a7e;
+$grey: #48434F;
+$bg__blue: #F8F8F8;
+$bg__border: #B3B3B3;
+
+@mixin position {
+    display: flex;
+    align-items: center;
+}
+
+@mixin h1 {
+    text-transform: uppercase;
+    color: $blue;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+
+    @media (max-width: 1024px) {
+        font-size: .9rem;
+    }
+
+    @media (max-width: 657px) {
+        font-size: .8rem;
+    }
+}
+
+@mixin subtitle__bg {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    padding: 15px 0 45px;
+
+    @media (max-width: 1024px) {
+        font-size: 2.3rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 657px) {
+        font-size: 1.6rem;
+    }
+
+    @media (max-width: 471px) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 416px) {
+        font-size: 1.2rem;
+    }
+}
+
+@mixin subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+
+    padding: 20px 0 35px;
+
+    @media (max-width: 1024px) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 991px) {
+        padding: 15px 0 30px;
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 883px) {
+        padding: 10px 0 25px;
+    }
+}
+
+@mixin description {
+    font-size: 1.1rem;
+    color: $grey;
+
+    @media (max-width: 1024px) {
+        font-size: .9rem;
+    }
+}
+
+/* Default styles */
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+
+    background-color: $white;
+
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+span {
+    color: $blue;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 .83rem;
+}
+
+
+@import "./header/header.scss";
+@import "./intro/intro.scss";
+@import "./button/button.scss";
+@import "./about/about.scss";
+@import "./products/products.scss";
+@import "./slider/slider.scss";
+@import "./forkids/forkids.scss";
+@import "./author/author.scss";
+@import "./contacts/contacts.scss";
+@import "./advantage/advantage.scss";
+@import "./togglemenu/togglemenu.scss";

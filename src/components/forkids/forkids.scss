@@ -1,0 +1,31 @@
+.forkids {
+    padding: 120px 0;
+    text-align: center;
+    background: $bg__blue;
+
+    @media (max-width: 991px) {
+        padding: 90px 0;
+    }
+}
+
+.forkids__block {
+    width: 951px;
+    margin: 0 auto;
+
+    @media (max-width: 1201px) {
+        width: 100%;
+    }
+
+}
+
+.forkids__title {
+    @include h1;
+}
+
+.forkids__subtitle {
+    @include subtitle__bg;
+}
+
+.forkids__info {
+    @include description;
+}

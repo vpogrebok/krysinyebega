@@ -1,30 +1,34 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Intro from "../components/intro/intro"
+import About from "../components/about/about"
+import Products from "../components/products/products"
+import Forkids from "../components/forkids/forkids"
+import Author from "../components/author/author"
+import Contacts from "../components/contacts/contacts"
+import Advantage from "../components/advantage/advantage"
+
+import { productsData } from "../data/ProductsData"
+import { kidsData } from "../data/kidsData"
+
+import "../components/style.scss"
+
+
+
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+    <Intro />
+    <About />
+    <Products data={productsData} />
+    <Advantage />
+    <Forkids />
+    <Products data={kidsData} />
+    <Author />
+    <Contacts />
   </Layout>
 )
 
